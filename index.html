@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+        .jumlah-input {
+            width: 100%; /* Lebar input akan menyesuaikan lebar kolom */
+            padding: 5px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<section class="section">
+    <div class="container">
+        <h1 class="title">Aplikasi POS</h1>
+        <div class="field">
+            <label class="label">Pilih Produk</label>
+            <div class="control">
+                <div class="select is-fullwidth"> <select id="productSelect">
+                        <option value="">Pilih Produk</option> </select>
+                </div>
+            </div>
+        </div>
+        <button class="button is-primary" id="tambahButton">Tambah</button>
+        <table class="table is-fullwidth" id="transactionTable">
+            <thead>
+                <tr>
+                    <th style="width: 15%;">Kode Produk</th>
+                    <th style="width: 45%;">Nama Produk</th>
+                    <th style="width: 10%;">Jumlah</th>
+                    <th style="width: 20%;">Subtotal</th>
+                    <th style="width: 10%;">Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th colspan="3">Total</th>
+                <th id="totalTransaksi">0</th>
+                <th></th>
+              </tr>
+          </tfoot>
+        </table>
+        <button class="button is-success" id="simpanButton">Simpan Transaksi</button>
+    </div>
+</section>
+
+  <script>
+    let products = [];
+        try {
+            const productsString = '<?= JSON.stringify(getProducts()) ?>';
+            console.log("Data string dari server:", productsString);
+            products = JSON.parse(productsString);
+            console.log("Data products setelah di-parse:", products);
+
+            const productSelect = document.getElementById('productSelect');
+            products.forEach(product => {
+                const option = document.createElement('option');
+                option.value = product.kode; // Gunakan kode produk sebagai value
+                option.text = product.nama; // Tampilkan nama produk
+                productSelect.appendChild(option);
+            });
+        } catch (error) {
+            console.error("Error:", error);
+            Swal.fire('Error!', 'Terjadi kesalahan: ' + error, 'error');
+        }
+
+        const tambahButton = document.getElementById('tambahButton');
+        const transactionTable = document.getElementById('transactionTable').getElementsByTagName('tbody')[0];
+        const simpanButton = document.getElementById('simpanButton');
+        const totalTransaksi = document.getElementById('totalTransaksi');
+        let cart = [];
+
+        tambahButton.addEventListener('click', () => {
+            const selectedKode = document.getElementById('productSelect').value;
+            if (selectedKode) {
+                const selectedProduct = products.find(p => p.kode === selectedKode);
+                if (selectedProduct) {
+                    const existingProduct = cart.find(item => item.kode === selectedProduct.kode);
+                    if (existingProduct) {
+                        existingProduct.jumlah++;
+                    } else {
+                        cart.push({ ...selectedProduct, jumlah: 1 }); // Jumlah default 1
+                    }
+                    updateTable();
+                }
+            }else{
+                Swal.fire('Pilih Produk!', 'Harap pilih produk dari dropdown.', 'warning');
+            }
+        });
+
+    function updateTable() {
+      transactionTable.innerHTML = ''; // Bersihkan tabel terlebih dahulu
+      let total = 0;
+      cart.forEach((item, index) => {
+        const row = transactionTable.insertRow();
+        const kodeCell = row.insertCell();
+        const namaCell = row.insertCell();
+        const jumlahCell = row.insertCell();
+        const subtotalCell = row.insertCell();
+        const aksiCell = row.insertCell();
+
+        kodeCell.textContent = item.kode;
+        namaCell.textContent = item.nama;
+
+        const jumlahInput = document.createElement('input');
+        jumlahInput.type = 'number';
+        jumlahInput.value = item.jumlah;
+        jumlahInput.min = 1;
+        jumlahInput.classList.add('jumlah-input');
+        jumlahInput.addEventListener('change', (event) => {
+            item.jumlah = parseInt(event.target.value);
+            updateTable(); // Panggil updateTable lagi setelah mengubah jumlah
+        });
+        jumlahCell.appendChild(jumlahInput);
+
+        const subtotal = item.jumlah * item.harga;
+        const subtotalFormatted = subtotal.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' });
+              subtotalCell.textContent = subtotalFormatted;
+              total += subtotal;
+
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Hapus';
+        deleteButton.classList.add('button', 'is-danger', 'is-small');
+        deleteButton.addEventListener('click', () => {
+          cart.splice(index, 1);
+          updateTable();
+        });
+        aksiCell.appendChild(deleteButton);
+      });
+      const totalFormatted = total.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' }); // Format total rupiah
+      totalTransaksi.textContent = totalFormatted; // Tampilkan total yang sudah diformat
+}
+
+    simpanButton.addEventListener('click', () => {
+        if (cart.length === 0) {
+            Swal.fire('Keranjang kosong!', 'Tambahkan produk terlebih dahulu.', 'warning');
+            return;
+        }
+
+        google.script.run.withSuccessHandler(response => {
+            if (response.success) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Transaksi Berhasil!',
+                    text: 'ID Transaksi: ' + response.idTransaksi,
+                    showConfirmButton: true,
+                    confirmButtonText: 'Cetak Struk'
+                }).then((result) => {
+                  if (result.isConfirmed) {
+                    google.script.run.withSuccessHandler(responseStruk=>{
+                      if(responseStruk.success){
+                        //Swal.fire('Struk Berhasil dicetak!', '', 'success');
+                        window.open(responseStruk.fileUrl, '_blank');
+                      }else{
+                        Swal.fire('Gagal cetak struk!', responseStruk.error, 'error');
+                      }
+                    }).generateStruk(response.idTransaksi);
+                  }
+                });
+                cart = []; // Reset keranjang
+                updateTable();
+            } else {
+                Swal.fire('Error!', response.error, 'error');
+            }
+        }).saveTransaction(cart);
+    });
+  </script>
+</body>
+</html>
