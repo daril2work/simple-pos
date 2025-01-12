@@ -1,0 +1,233 @@
+[
+  {
+    "ID Detail": "IDD-0000",
+    "ID Transaksi": "TR-0000",
+    "Kode Produk": "PRD001",
+    "Jumlah": 1,
+    "Subtotal": 10000
+  },
+  {
+    "ID Detail": "IDD-0000",
+    "ID Transaksi": "TR-0000",
+    "Kode Produk": "PRD003",
+    "Jumlah": 5,
+    "Subtotal": 75000
+  },
+  {
+    "ID Detail": "IDD-0001",
+    "ID Transaksi": "TR-0001",
+    "Kode Produk": "PRD001",
+    "Jumlah": 3,
+    "Subtotal": 30000
+  },
+  {
+    "ID Detail": "IDD-0002",
+    "ID Transaksi": "TR-0002",
+    "Kode Produk": "PRD001",
+    "Jumlah": 1,
+    "Subtotal": 10000
+  },
+  {
+    "ID Detail": "IDD-0002",
+    "ID Transaksi": "TR-0002",
+    "Kode Produk": "PRD003",
+    "Jumlah": 1,
+    "Subtotal": 15000
+  },
+  {
+    "ID Detail": "IDD-0003",
+    "ID Transaksi": "TR-0003",
+    "Kode Produk": "PRD001",
+    "Jumlah": 1,
+    "Subtotal": 10000
+  },
+  {
+    "ID Detail": "IDD-0004",
+    "ID Transaksi": "TR-0004",
+    "Kode Produk": "PRD001",
+    "Jumlah": 1,
+    "Subtotal": 10000
+  },
+  {
+    "ID Detail": "IDD-0005",
+    "ID Transaksi": "TR-0005",
+    "Kode Produk": "PRD001",
+    "Jumlah": 2,
+    "Subtotal": 20000
+  },
+  {
+    "ID Detail": "IDD-0005",
+    "ID Transaksi": "TR-0005",
+    "Kode Produk": "PRD003",
+    "Jumlah": 1,
+    "Subtotal": 15000
+  },
+  {
+    "ID Detail": "IDD-0006",
+    "ID Transaksi": "TR-0006",
+    "Kode Produk": "PRD001",
+    "Jumlah": 1,
+    "Subtotal": 10000
+  },
+  {
+    "ID Detail": "IDD-0007",
+    "ID Transaksi": "TR-0007",
+    "Kode Produk": "PRD001",
+    "Jumlah": 1,
+    "Subtotal": 10000
+  },
+  {
+    "ID Detail": "IDD-0008",
+    "ID Transaksi": "TR-0008",
+    "Kode Produk": "PRD001",
+    "Jumlah": 1,
+    "Subtotal": 10000
+  },
+  {
+    "ID Detail": "IDD-0009",
+    "ID Transaksi": "TR-0009",
+    "Kode Produk": "PRD001",
+    "Jumlah": 1,
+    "Subtotal": 10000
+  },
+  {
+    "ID Detail": "IDD-0010",
+    "ID Transaksi": "TR-0010",
+    "Kode Produk": "PRD001",
+    "Jumlah": 1,
+    "Subtotal": 10000
+  },
+  {
+    "ID Detail": "IDD-0011",
+    "ID Transaksi": "TR-0011",
+    "Kode Produk": "PRD001",
+    "Jumlah": 1,
+    "Subtotal": 10000
+  },
+  {
+    "ID Detail": "IDD-0011",
+    "ID Transaksi": "TR-0011",
+    "Kode Produk": "PRD003",
+    "Jumlah": 1,
+    "Subtotal": 15000
+  },
+  {
+    "ID Detail": "IDD-0012",
+    "ID Transaksi": "TR-0012",
+    "Kode Produk": "PRD001",
+    "Jumlah": 1,
+    "Subtotal": 10000
+  },
+  {
+    "ID Detail": "IDD-0013",
+    "ID Transaksi": "TR-0013",
+    "Kode Produk": "PRD001",
+    "Jumlah": 5,
+    "Subtotal": 50000
+  },
+  {
+    "ID Detail": "IDD-0014",
+    "ID Transaksi": "TR-0014",
+    "Kode Produk": "PRD001",
+    "Jumlah": 5,
+    "Subtotal": 50000
+  },
+  {
+    "ID Detail": "IDD-0015",
+    "ID Transaksi": "TR-0015",
+    "Kode Produk": "PRD001",
+    "Jumlah": 1,
+    "Subtotal": 10000
+  },
+  {
+    "ID Detail": "IDD-0016",
+    "ID Transaksi": "TR-0016",
+    "Kode Produk": "PRD001",
+    "Jumlah": 3,
+    "Subtotal": 30000
+  },
+  {
+    "ID Detail": "IDD-0017",
+    "ID Transaksi": "TR-0017",
+    "Kode Produk": "PRD003",
+    "Jumlah": 3,
+    "Subtotal": 45000
+  },
+  {
+    "ID Detail": "IDD-0018",
+    "ID Transaksi": "TR-0018",
+    "Kode Produk": "PRD001",
+    "Jumlah": 1,
+    "Subtotal": 10000
+  },
+  {
+    "ID Detail": "IDD-0018",
+    "ID Transaksi": "TR-0018",
+    "Kode Produk": "PRD003",
+    "Jumlah": 1,
+    "Subtotal": 15000
+  },
+  {
+    "ID Detail": "IDD-0019",
+    "ID Transaksi": "TR-0019",
+    "Kode Produk": "PRD003",
+    "Jumlah": 5,
+    "Subtotal": 75000
+  },
+  {
+    "ID Detail": "IDD-0020",
+    "ID Transaksi": "TR-0020",
+    "Kode Produk": "PRD001",
+    "Jumlah": 1,
+    "Subtotal": 10000
+  },
+  {
+    "ID Detail": 28,
+    "ID Transaksi": 29,
+    "Kode Produk": "PRD001",
+    "Jumlah": 2,
+    "Subtotal": 20000
+  },
+  {
+    "ID Detail": 28,
+    "ID Transaksi": 29,
+    "Kode Produk": "PRD003",
+    "Jumlah": 1,
+    "Subtotal": 15000
+  },
+  {
+    "ID Detail": 30,
+    "ID Transaksi": 30,
+    "Kode Produk": "PRD003",
+    "Jumlah": 1,
+    "Subtotal": 15000
+  },
+  {
+    "ID Detail": "IDD-0000",
+    "ID Transaksi": "TR-0000",
+    "Kode Produk": "PRD003",
+    "Jumlah": 2,
+    "Subtotal": 30000
+  },
+  {
+    "ID Detail": "IDD-0000",
+    "ID Transaksi": "TR-0000",
+    "Kode Produk": "PRD001",
+    "Jumlah": 1,
+    "Subtotal": 10000
+  },
+  {
+    "ID Detail": "IDD-0001",
+    "ID Transaksi": "TR-0001",
+    "Kode Produk": "PRD001",
+    "Jumlah": 3,
+    "Subtotal": 30000
+  },
+  {
+    "ID Detail": "IDD-0001",
+    "ID Transaksi": "TR-0001",
+    "Kode Produk": "PRD002",
+    "Jumlah": 2,
+    "Subtotal": 30000
+  }
+]
