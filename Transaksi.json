@@ -1,0 +1,188 @@
+[
+  {
+    "ID Transaksi": 1,
+    "Tanggal": "1/10/2025 8:09:56",
+    "Waktu": "1/10/2025 8:09:56",
+    "Total": 0
+  },
+  {
+    "ID Transaksi": 2,
+    "Tanggal": "1/10/2025 10:36:06",
+    "Waktu": "1/10/2025 10:36:06",
+    "Total": 50000
+  },
+  {
+    "ID Transaksi": 3,
+    "Tanggal": "1/10/2025 11:26:20",
+    "Waktu": "1/10/2025 11:26:20",
+    "Total": 40000
+  },
+  {
+    "ID Transaksi": 4,
+    "Tanggal": "1/11/2025 17:02:45",
+    "Waktu": 17.02,
+    "Total": 60000
+  },
+  {
+    "ID Transaksi": 6,
+    "Tanggal": "1/11/2025 17:08:33",
+    "Waktu": 17.08,
+    "Total": 30000
+  },
+  {
+    "ID Transaksi": 7,
+    "Tanggal": "1/11/2025 17:10:25",
+    "Waktu": 17.1,
+    "Total": 30000
+  },
+  {
+    "ID Transaksi": "TR-0000",
+    "Tanggal": "1/11/2025 17:21:43",
+    "Waktu": 17.21,
+    "Total": 85000
+  },
+  {
+    "ID Transaksi": "TR-0001",
+    "Tanggal": "1/11/2025 17:43:28",
+    "Waktu": 17.43,
+    "Total": 30000
+  },
+  {
+    "ID Transaksi": "TR-0002",
+    "Tanggal": "1/11/2025 17:43:56",
+    "Waktu": 17.43,
+    "Total": 25000
+  },
+  {
+    "ID Transaksi": "TR-0003",
+    "Tanggal": "1/11/2025 17:59:55",
+    "Waktu": 17.59,
+    "Total": 10000
+  },
+  {
+    "ID Transaksi": "TR-0004",
+    "Tanggal": "1/11/2025 18:00:11",
+    "Waktu": 18,
+    "Total": 10000
+  },
+  {
+    "ID Transaksi": "TR-0005",
+    "Tanggal": "1/11/2025 18:12:06",
+    "Waktu": 18.12,
+    "Total": 35000
+  },
+  {
+    "ID Transaksi": "TR-0006",
+    "Tanggal": "1/11/2025 19:01:26",
+    "Waktu": 19.01,
+    "Total": 10000
+  },
+  {
+    "ID Transaksi": "TR-0007",
+    "Tanggal": "1/11/2025 19:08:10",
+    "Waktu": 19.08,
+    "Total": 10000
+  },
+  {
+    "ID Transaksi": "TR-0008",
+    "Tanggal": "1/11/2025 19:10:31",
+    "Waktu": 19.1,
+    "Total": 10000
+  },
+  {
+    "ID Transaksi": "TR-0009",
+    "Tanggal": "1/11/2025 19:10:49",
+    "Waktu": 19.1,
+    "Total": 10000
+  },
+  {
+    "ID Transaksi": "TR-0010",
+    "Tanggal": "1/11/2025 19:17:41",
+    "Waktu": 19.17,
+    "Total": 10000
+  },
+  {
+    "ID Transaksi": "TR-0011",
+    "Tanggal": "1/11/2025 19:17:57",
+    "Waktu": 19.17,
+    "Total": 25000
+  },
+  {
+    "ID Transaksi": "TR-0012",
+    "Tanggal": "1/11/2025 19:53:50",
+    "Waktu": 19.53,
+    "Total": 10000
+  },
+  {
+    "ID Transaksi": "TR-0013",
+    "Tanggal": "1/11/2025 19:57:08",
+    "Waktu": 19.57,
+    "Total": 50000
+  },
+  {
+    "ID Transaksi": "TR-0014",
+    "Tanggal": "1/11/2025 20:05:48",
+    "Waktu": 20.05,
+    "Total": 50000
+  },
+  {
+    "ID Transaksi": "TR-0015",
+    "Tanggal": "1/11/2025 20:12:22",
+    "Waktu": 20.12,
+    "Total": 10000
+  },
+  {
+    "ID Transaksi": "TR-0016",
+    "Tanggal": "1/11/2025 20:21:02",
+    "Waktu": 20.21,
+    "Total": 30000
+  },
+  {
+    "ID Transaksi": "TR-0017",
+    "Tanggal": "1/11/2025 20:23:09",
+    "Waktu": 20.23,
+    "Total": 45000
+  },
+  {
+    "ID Transaksi": "TR-0018",
+    "Tanggal": "1/11/2025 20:28:08",
+    "Waktu": 20.28,
+    "Total": 25000
+  },
+  {
+    "ID Transaksi": "TR-0019",
+    "Tanggal": "1/11/2025 20:29:13",
+    "Waktu": 20.29,
+    "Total": 75000
+  },
+  {
+    "ID Transaksi": "TR-0020",
+    "Tanggal": "1/11/2025 20:35:40",
+    "Waktu": 20.35,
+    "Total": 10000
+  },
+  {
+    "ID Transaksi": 29,
+    "Tanggal": "1/12/2025 11:07:33",
+    "Waktu": 11.07,
+    "Total": 35000
+  },
+  {
+    "ID Transaksi": 30,
+    "Tanggal": "1/12/2025 11:10:55",
+    "Waktu": 11.1,
+    "Total": 15000
+  },
+  {
+    "ID Transaksi": "TR-0000",
+    "Tanggal": "1/12/2025 11:15:35",
+    "Waktu": 11.15,
+    "Total": 40000
+  },
+  {
+    "ID Transaksi": "TR-0001",
+    "Tanggal": "1/12/2025 11:32:13",
+    "Waktu": 11.32,
+    "Total": 60000
+  }
+]
