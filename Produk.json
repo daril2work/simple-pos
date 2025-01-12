@@ -1,0 +1,20 @@
+[
+  {
+    "Kode Produk": "PRD001",
+    "Nama Produk": "Buku Tulis",
+    "Harga": 10000,
+    "Stok": 61
+  },
+  {
+    "Kode Produk": "PRD002",
+    "Nama Produk": "Pensil",
+    "Harga": 15000,
+    "Stok": 98
+  },
+  {
+    "Kode Produk": "PRD003",
+    "Nama Produk": "Pulpen",
+    "Harga": 15000,
+    "Stok": 77
+  }
+]
